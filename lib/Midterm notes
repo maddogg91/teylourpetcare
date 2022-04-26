@@ -1,0 +1,27 @@
+USER LOGS IN
+
+//Gets registration info
+Firestore.instance.collection('registration').where('email', 
+isEqualTo: email).snapshots();
+
+      username= .get("username");
+	  role= .get("role");
+	  id= .get("messageIdNum");
+
+
+GET CONVOS BY user ID:
+Firestore.instance.collection('conversation').where('primaryUserNum', 
+isEqualTo: id).snapshots();
+
+For each conversation in users list create a chat window
+
+In chat window, toUserNum should reverse lookup first name and last name of 
+to user.
+
+
+
+
+ALL MESSAGES IN DB
+Firestore.instance.collection('messages').snapshots();
+
+

@@ -1,0 +1,54 @@
+TODO
+1. Create Teylour's Landing Page that has a Teylour's logo, some information and a register or login button.
+2. Create Login page, link to firestore
+3. Create registration page, link to firestore
+4. Add nav buttons from Login to REGISTRATION, REGISTRATION to Login.
+5. Create User profile page. See below.
+6. Create FAQ page. See below.
+7. Create Pet profile page. See below.
+8. Create Appointment page. See below.
+9. Create Pet Portal (***less priority***)
+10. Create Social Media login, link to firestore (***less priority***)
+11. Create Google login, link to firesore (***less priority***)
+
+
+API create
+ 
+Create Pet profiles  /api/v1/create   (POST pet object, set Id as Pet ID. Pet ID will be saved to Firestore also)
+Read Pet profiles    /api/v1/view     (Firestore will store list of pets, pass down to user profile, user profile fetches from mongodb pets.)
+Update Pet profiles  /api/v1/update   (When user clicks pet profile, id will be stored locally and passed to api for pet object updates)
+Delete Pet profiles  /api/v1/delete   (WARN USER before deleting pet profile by pet id, remove pet id from FS)
+
+Calendar Ops:
+Calender view    /api/v1/booked       (Retreives list of dates/times booked)
+Client request   /api/v1/request      (Sends message to Cat (admin), she will have the option to accept or deny request. Contains pet object, dates)
+Admin accept     /api/v1/accept       (Saves Date objects in the DB to block off potential dates.
+
+
+
+
+
+
+
+Pet Profile
+---------
+Shows chat like boxes for each pet in the system. With Pet photo as the icon. 
+
+
+"Welcome ____"
+[Moxie Tyrone]   [Chance]
+
+
+
+
+
+PET REGISTRATION
+
+User can create 
+Pet's First name    ex: Moxie Tyrone
+Family name ex: Charity
+Birthdate  ex: 10/24/2017
+Photos
+
+
+connects via user unique username. 
